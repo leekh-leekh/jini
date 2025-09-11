@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>팝업 자동 열기</title>
+</head>
+<body>
+    <h1>팝업이 자동으로 열립니다.</h1>
+
+    <script>
+        function openPopup() {
+            const url = 'https://jini.hanjin.com/';
+            const width = 500;
+            const height = 800;
+
+            const options = `width=${width},height=${height},toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no`;
+
+            // 팝업창 열기
+            window.open(url, '_blank', options);
+        }
+
+        // 페이지가 로드되면 openPopup() 함수를 바로 실행
+        window.onload = openPopup;
+    </script>
+</body>
+</html>
