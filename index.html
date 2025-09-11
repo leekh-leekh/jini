@@ -1,26 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>팝업 자동 열기</title>
+    <title>팝업 링크</title>
 </head>
 <body>
-    
-    <script>
-        function openPopup() {
-            const url = 'https://jini.hanjin.com/';
-            const width = 500;
-            const height = 800;
+    <a href="#" onclick="window.open('https://jini.hanjin.com/', '_blank', 'width=500,height=800');">새 창에서 한진 택배 사이트 열기</a>
 
-            const options = `width=${width},height=${height},toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no`;
-
-            // 팝업창 열기
-            window.open(url, '_blank', options);
-        }
-
-        // 페이지가 로드되면 openPopup() 함수를 바로 실행
-        window.onload = openPopup;
-    </script>
+    <p>위 링크를 클릭하면 특정 크기의 새 창이 열립니다.</p>
 </body>
 </html>
-
-
